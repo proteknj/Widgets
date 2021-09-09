@@ -8,7 +8,8 @@ const Dropdown=({options,selected,onSelectedChange})=>{
             if(ref.current.contains(event.target)){
                 return;
             }
-                setOpen(false)  
+                setOpen(false) 
+                
               }
         document.body.addEventListener('click',onBodyClick,{capture:true});
         return ()=>{
